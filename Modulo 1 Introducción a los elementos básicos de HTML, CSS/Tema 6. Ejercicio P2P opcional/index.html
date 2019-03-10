@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML/CSS - Herencia CSS</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+</head>
+
+<body>
+<h1 class="titulo">Tema 6. Ejercicio P2P opcional </h1>
+<p>Realizar en el siguiente HTML 5 <strong>declaraciones de estilo CSS que afecten al mismo elemento</strong>, <em>el titilar h1, con diferentes puntuaciones de prioridad, e indicar su puntuación como un comentario en el propio HTML</em>:</p>
+
+<h1 class="titulo">Código html</h1>    
+<code><pre>
+        &lt;!doctype html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;meta charset=&quot;utf­8&quot;&gt;
+        &lt;title&gt;Herencia&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+
+        &lt;div id=&quot;caja&quot;&gt;
+
+        &lt;header class=&quot;cabecera&quot;&gt;
+            &lt;h1&gt;Cabecera: header&lt;/h1&gt;
+        &lt;/header&gt;
+
+        &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+</pre></code>
+    
+<h1 class="titulo">CSS para la etiqueta h1</h1>    
+    
+<code>
+    <pre id="estilo">
+        h1{
+            color:#e5af5a;      /*crema*/
+        }
+        h1{
+            color:#000;         /*negro*/
+
+        }
+
+                    puntuación=0,0,0,1 
+        <hr>
+        header h1{
+            color:#d74a1f;      /*naranja*/
+        }
+        
+                    puntuación=0,0,0,2 
+        <hr>
+        #caja .cabecera h1{
+            color:#389858;      /*verde*/
+        }
+                <h2>puntuación=0,1,1,1 - Regla Aplicada</h2>
+        <hr>
+        #caja header h1{
+            color: #FFF059;     /*amarillo*/
+        }
+        
+                puntuación=0,1,0,2 
+        <hr>
+</pre>
+</code>
+<p>Resultado:</p>    
+<div id="caja">
+
+<header class="cabecera">
+    <h1>Cabecera: header</h1>
+</header>
+
+</div>
+</body>
+</html>
